@@ -1,0 +1,9 @@
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\bin\Debug\netstandard2.0\SmartSite.Log.deps.json
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\bin\Debug\netstandard2.0\SmartSite.Log.dll
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\obj\Debug\netstandard2.0\SmartSite.Log.AssemblyInfoInputs.cache
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\obj\Debug\netstandard2.0\SmartSite.Log.AssemblyInfo.cs
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\bin\Debug\netstandard2.0\SmartSite.Log.pdb
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\obj\Debug\netstandard2.0\SmartSite.Log.csproj.CoreCompileInputs.cache
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\obj\Debug\netstandard2.0\SmartSite.Log.dll
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\obj\Debug\netstandard2.0\SmartSite.Log.pdb
+D:\Project\Core\AbSmartSite.Core\SmartSite.Log\obj\Debug\netstandard2.0\SmartSite.Log.csprojAssemblyReference.cache
