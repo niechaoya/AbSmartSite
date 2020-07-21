@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using StackExchange.Redis;
 using SmartSite.Log;
+using System.Threading;
 
 namespace SmartSite.Common
 {
+    /// <summary>
+    /// redis帮助类
+    /// </summary>
     public class RedisHelper
     {
         private RedisHelper()
@@ -27,7 +31,9 @@ namespace SmartSite.Common
         {
             if (_connMultiplexer == null || !_connMultiplexer.IsConnected)
             {
-                var connectionString = "";// ConfigurationManager.ConnectionStrings["RedisConnectionString"].ConnectionString;
+                var connectionString = ReadAppConfig.ReadConnectString("RedisConnection");
+                if (string.IsNullOrEmpty(connectionString))
+                    return;
                 int i = 0;
                 while (i < 3)
                 {
@@ -38,8 +44,9 @@ namespace SmartSite.Common
                     }
                     catch (Exception ex)
                     {
-                        LogHelper.WriteErrorLog($"redis初始化连接失败,连接字符串：{connectionString}。异常信息:{ex}");
                         i++;
+                        LogHelper.WriteErrorLog($"redis初始化连接失败{i}次,连接字符串：{connectionString}。异常信息:{ex}");
+                        Thread.Sleep(10);
                     }
                 }
             }

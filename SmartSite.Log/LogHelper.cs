@@ -8,6 +8,9 @@ using System.IO;
 
 namespace SmartSite.Log
 {
+    /// <summary>
+    /// log4net帮助类
+    /// </summary>
     public class LogHelper
     {
         private static ILog _log4net;

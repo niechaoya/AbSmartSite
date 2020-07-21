@@ -26,6 +26,11 @@ namespace SmartSite.Web.ApiControllers
             return await new DeviceLogic().GetDevices();
         }
         [Route("[action]")]
+        public async Task<Device> GetDeviceBySN()
+        {
+            return await new DeviceLogic().GetDeviceBySN("19122303");
+        }
+        [Route("[action]")]
         public string WriteLogTest()
         {
             LogHelper.WriteErrorLog("log test");
