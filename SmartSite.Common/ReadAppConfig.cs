@@ -23,7 +23,7 @@ namespace SmartSite.Common
             {
                 Path = "appsettings.json",
                 Optional = true
-            }).Build();
+            }).Build();    
             var connectionString = config.GetConnectionString(connectName);
             if(string.IsNullOrEmpty(connectionString))
             {
